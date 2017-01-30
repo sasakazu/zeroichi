@@ -1,2 +1,31 @@
-<h1>Ichiposts#new</h1>
-<p>Find me in app/views/ichiposts/new.html.erb</p>
+
+
+<%= render 'shared/header' %>
+
+
+
+<div class="container">
+
+  <div class="ichi-post-new">
+
+    <%= form_for @ichipost do |f| %>
+
+    <%= f.label :今日のイチ！ %><br>
+
+    <%= f.text_area :content %><br>
+
+
+    <%= f.submit 'シェアする' %>
+
+
+    <% end %>
+
+
+
+  </div>
+
+</div>
+
+
+
+<%= render 'shared/footer' %>
