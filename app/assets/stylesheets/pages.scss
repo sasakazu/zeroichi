@@ -14,6 +14,7 @@
 .home-top-image {
   background-image: url("/images/kids.jpg");
   background-size: cover;
+  margin-bottom: 100px;
 
 
   h2 {
@@ -32,4 +33,31 @@
   padding-top: 200px;
   padding-bottom: 230px;
   background-color: rgba(0, 0, 0, .6);
+}
+
+.ichi-post-title {
+
+  h1 {
+    margin-bottom: 30px;
+
+  }
+
+}
+
+.ichi-post-main {
+  background-color: #f5f8fa;
+  border-bottom: 1px solid #e1e8ed;
+  padding: 10px;
+  width: 70%;
+  margin: 0 auto;
+
+  img {
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin-right: 10px;
+  }
+}
+
+.index-ichi-user-name {
 }
