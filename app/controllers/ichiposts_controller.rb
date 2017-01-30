@@ -7,7 +7,7 @@ class IchipostsController < ApplicationController
 
 
   def create
-    @ichipost = Ichipost.new(ichipost_params)
+    @ichipost = Ichipost.create(ichipost_params)
     if @ichipost.save
       redirect_to root_path
     else
