@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170130094741) do
+ActiveRecord::Schema.define(version: 20170201041751) do
 
   create_table "ichiposts", force: :cascade do |t|
     t.text     "content"
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 20170130094741) do
     t.string   "name"
     t.string   "email"
     t.string   "password_digest"
+    t.string   "remember_digest"
   end
 
 end
