@@ -2,7 +2,7 @@ class User < ActiveRecord::Base
   attr_accessor :remember_token
 
 
-  has_many :ichiposts
+  has_many :ichiposts, dependent: :destroy
   has_secure_password
 
 

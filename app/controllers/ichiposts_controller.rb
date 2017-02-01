@@ -6,14 +6,15 @@ class IchipostsController < ApplicationController
   end
 
 
-  def create
-    @ichipost = Ichipost.create(ichipost_params)
-    if @ichipost.save
-      redirect_to root_path
-    else
-      render 'new'
-    end
 
+
+  def create
+    @ichipost = current_user.ichiposts.build(ichipost_params)
+    if @ichipost.save
+      redirect_to root_url
+    else
+      render 'pages/home'
+    end
   end
 
 
